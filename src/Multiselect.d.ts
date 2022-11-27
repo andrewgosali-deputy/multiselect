@@ -1,6 +1,6 @@
-import Vue,{ VNode } from 'vue';
+import { VNode, defineComponent } from "vue";
 
-declare class Multiselect extends Vue {
+declare class Multiselect implements ReturnType<typeof defineComponent> {
   modelValue?: any;
   value?: any;
   mode: 'single'|'multiple'|'tags';
